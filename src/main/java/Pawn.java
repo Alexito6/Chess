@@ -20,7 +20,6 @@ public class Pawn extends Piece {
             else
                 new Queen(cell.getBoard(), cell.getCoordinate(), Queen.Type.WHITE);
         }
-
         return moved;
     }
 

@@ -30,7 +30,7 @@ public class DeletedPieceManagerListImp{
         cajaArribaNegra=colorize(cajaArribaNegra,Attribute.TEXT_COLOR(0,0,0));
         String cajaCompleta=cajaArribaBlanca+cajaArribaNegra;
         cajaCompleta=colorize(cajaCompleta,Attribute.BACK_COLOR(100,100,100));
-        int peonBlanco = 8,torreBlanca=2,alfilBlanco=2,reyBlanco=1,caballoBlanco=2,reinaBlanca=1,peonNegro=8,torreNegra=2,alfilNegro=2,reyNegro=1,caballoNegro=2,reinaNegra=1;
+        int peonBlanco=8,torreBlanca=2,alfilBlanco=2,reyBlanco=1,caballoBlanco=2,reinaBlanca=1,peonNegro=8,torreNegra=2,alfilNegro=2,reyNegro=1,caballoNegro=2,reinaNegra=1;
         peonBlanco-=count(Piece.Type.WHITE_PAWN);
         torreBlanca-=count(Piece.Type.WHITE_ROOK);
         alfilBlanco-=count(Piece.Type.WHITE_BISHOP);
@@ -75,6 +75,5 @@ public class DeletedPieceManagerListImp{
         cajaAbajo=colorize(cajaAbajo,Attribute.BACK_COLOR(180,180,180));
         cajaAbajo=colorize(cajaAbajo,Attribute.TEXT_COLOR(0,0,0));
         return "REMAINING PIECES:"+"\n"+cajaCompleta+"\n"+cajaAbajo;
-
     }
 }
