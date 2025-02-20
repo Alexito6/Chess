@@ -47,7 +47,7 @@ public class DeletedPieceManagerListImp{
                 " "+peonNegro+" "+torreNegra+" "+alfilNegro+" "+reyNegro+" "+caballoNegro+" "+reinaNegra;
         cajaAbajo=colorize(cajaAbajo,Attribute.BACK_COLOR(180,180,180));
         cajaAbajo=colorize(cajaAbajo,Attribute.TEXT_COLOR(0,0,0));
-        return "DELETED PIECES:"+"\n"+cajaCompleta+"\n"+cajaAbajo;
+        return "      DELETED PIECES:"+"\n   "+cajaCompleta+"\n   "+cajaAbajo;
     }
     public String cajaRestantes(){
         String cajaArribaBlanca=Piece.Type.WHITE_PAWN.getShape()+" "+Piece.Type.WHITE_ROOK.getShape()+" "+Piece.Type.WHITE_BISHOP.getShape()+
@@ -74,6 +74,6 @@ public class DeletedPieceManagerListImp{
                 " "+peonNegro+" "+torreNegra+" "+alfilNegro+" "+reyNegro+" "+caballoNegro+" "+reinaNegra;
         cajaAbajo=colorize(cajaAbajo,Attribute.BACK_COLOR(180,180,180));
         cajaAbajo=colorize(cajaAbajo,Attribute.TEXT_COLOR(0,0,0));
-        return "REMAINING PIECES:"+"\n"+cajaCompleta+"\n"+cajaAbajo;
+        return "      REMAINING PIECES:"+"\n   "+cajaCompleta+"\n   "+cajaAbajo;
     }
 }

@@ -24,7 +24,7 @@ public class Ajedrez {
             if (board.check()){
                 System.out.println(check);
             }
-            String mov=Input.pedirCoordenada(jugadorBlanco+" tell me the coordinate of the piece you want to move please. Example(G6)");
+            String mov=Tools.pedirCoordenada(jugadorBlanco+" tell me the coordinate of the piece you want to move please. Example(G6)");
             Input.movePiece(mov,board);
             listaPiezas.setPieceList(board.getPiezas());
             if (!board.hayReyes()){
@@ -38,7 +38,7 @@ public class Ajedrez {
                 if (board.check()){
                     System.out.println(check);
                 }
-                mov=Input.pedirCoordenada(jugadorNegro+" tell me the coordinate of the piece you want to move please. Example(C3)");
+                mov=Tools.pedirCoordenada(jugadorNegro+" tell me the coordinate of the piece you want to move please. Example(C3)");
                 Input.movePiece(mov,board);
                 listaPiezas.setPieceList(board.getPiezas());
                 if (!board.hayReyes()){

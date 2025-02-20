@@ -16,28 +16,28 @@ public class King extends Piece {
         Set<Coordinate> posicionesCandidatas = new HashSet<>();
 
         if (canAddToNextMovements(position.up()))
-            posicionesCandidatas.add(position);
+            posicionesCandidatas.add(position.up());
 
         if (canAddToNextMovements(position.up().right()))
-            posicionesCandidatas.add(position);
+            posicionesCandidatas.add(position.up().right());
 
         if (canAddToNextMovements(position.right()))
-            posicionesCandidatas.add(position);
+            posicionesCandidatas.add(position.right());
 
         if (canAddToNextMovements(position.down().right()))
-            posicionesCandidatas.add(position);
+            posicionesCandidatas.add(position.down().right());
 
         if (canAddToNextMovements(position.down()))
-            posicionesCandidatas.add(position);
+            posicionesCandidatas.add(position.down());
 
         if (canAddToNextMovements(position.down().left()))
-            posicionesCandidatas.add(position);
+            posicionesCandidatas.add(position.down().left());
 
         if (canAddToNextMovements(position.left()))
-            posicionesCandidatas.add(position);
+            posicionesCandidatas.add(position.left());
 
         if (canAddToNextMovements(position.up().left()))
-            posicionesCandidatas.add(position);
+            posicionesCandidatas.add(position.up().left());
 
         return posicionesCandidatas;
     }
